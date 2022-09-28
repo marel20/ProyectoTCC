@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -109,44 +110,61 @@
       </header>
       <br /><br /><br />
 
-      <div class="text-center">
-        <img
-          src="../assets/logo/logo.png"
-          width="10%"
-          style="margin: 7% auto !important"
-          alt=""
-        />
+    <form method="POST" class="contact-form row">
+        
+    <div class="tabla text-center">
+        <table class="table">
+            <thead class="table-dark">
+                <th>numero</th>
+                <th>nombre</th>
+                <th>domicilio</th>
+                <th>localidad</th>
+                <th>sexo</th>
+                <th>sangre</th>
+                <th>dni</th>
+                <th>nacimiento</th>
+                <th>ingreso</th>
+                <th>estado civil</th>
+                <th>telefono</th>
+                <th>codigo cobrador</th>
+            </thead>
 
-        <h2 class="text-black" style="margin: 5% auto !important">
-          Bienvenidos al sistema de gestión del Tenis Club Correa
-        </h2>
-      </div>
-
-      <!--Start Footer-->
-      <footer class="footer text-center text-white">
-        <!-- Copyright -->
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          © 2022 Copyright:
-          <a
-            class="text-white"
-            target="_blank"
-            href="http://www.mgsolutions.com.ar"
-            >MG Solutions</a
-          >
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!--End Footer-->
+        <!--incluir lista desde archivo php-->
+            <?php
+                include '../php/listasocios.php';
+            ?>
+    
+        </table>
     </div>
+    </form>
+  
+       <!--Start Footer-->
+      <footer
+      class="footer text-center text-white"
+    >
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2022 Copyright:
+        <a
+          class="text-white"
+          target="_blank"
+          href="http://www.mgsolutions.com.ar"
+          >MG Solutions</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--End Footer-->
+  </div>
 
-    <script src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="../js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript"></script>
-  </body>
+  <script src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
 </html>
